@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:background="@color/purple_700"
+        android:backgroundTint="@color/white"
+        android:text="- SAYI TAHMİN OYUNU -"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBasla"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="64dp"
+        android:background="@color/purple_500"
+        android:text="- OYUNA BAŞLA -"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="78dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBasla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/soru_isareti" />
+</androidx.constraintlayout.widget.ConstraintLayout>
